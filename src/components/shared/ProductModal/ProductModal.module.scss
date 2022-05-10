@@ -1,0 +1,28 @@
+.image {
+	object-fit: cover;
+	height: 200px;
+	min-width: 200px;
+	border-radius: 8px;
+	background-color: rgba($color: #ddd, $alpha: 0.8);
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+
+	@media (max-width: 600px) {
+		width: 100%;
+		height: 240px;
+	}
+}
+
+.image-placeholder {
+	background-color: rgba($color: #ddd, $alpha: 0.8);
+	height: 200px;
+	width: 220px;
+	border-radius: 8px;
+
+	@media (max-width: 600px) {
+		display: none;
+	}
+}

@@ -1,0 +1,42 @@
+@use '../../../styles/mixins.scss' as *;
+
+.card {
+	cursor: pointer;
+	border: none;
+	&:hover {
+		.card-title {
+			color: blue;
+		}
+	}
+}
+
+.card-title {
+	@include clamp(2);
+}
+.card-image-container {
+	background-color: rgba($color: #ddd, $alpha: 0.8);
+	margin: 10px;
+	border-radius: 8px;
+}
+
+.card-image {
+	min-height: 180px;
+	max-height: 220px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.card-rating {
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+
+	.text {
+		font-size: 14px;
+	}
+}
+
+.card-description {
+	@include clamp(3);
+}
